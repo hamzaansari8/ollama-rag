@@ -184,8 +184,7 @@ def build_context(nodes) -> Tuple[str, List[str]]:
 # ---------------------------
 def ask_llm(query: str, context: str) -> str:
     prompt = f"""
-Answer ONLY exactly from context.
-copy the exact format of context (bullet points,numbering,etc)
+Answer ONLY from context.
 If not found, say: Not found.
 
 {context}
